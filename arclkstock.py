@@ -50,15 +50,6 @@ stock_data.drop("Date",axis=1,inplace=True)
 
 result_df = stock_data.copy()
 
-#Visulazing
-plt.figure(figsize=(12,6))
-plt.plot(stock_data['Close'],color='blue')
-plt.ylabel("Stock price")
-plt.title("Tesla Stock Price")
-plt.xlabel("Time")
-plt.show()
-'''Durağanlık,mevsimselli ve trend hakkında tespitler ypamamız gerekiyor fakat burda yapmıyıcaz'''
-
 #df to numpy array
 stock_data = stock_data.values
 #Changing dtype to float32
